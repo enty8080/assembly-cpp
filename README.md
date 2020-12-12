@@ -25,7 +25,9 @@ int main(void)
 ```
 
 > nasm -f elf64 foo.S
+
 > g++ main.cc foo.o
+
 > ./a.out
 
 ```
