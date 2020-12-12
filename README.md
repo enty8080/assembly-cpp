@@ -7,7 +7,7 @@ Tutorial how to combine assembly and C++
 section .text
 global _foo
 _foo:
-    mov rax, 1
+    mov eax, 1
     ret
 ```
 
