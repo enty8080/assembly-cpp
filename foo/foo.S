@@ -1,6 +1,6 @@
 section .text
-global _foo
+global foo
 
-_foo:
+foo:
     mov eax, 1
     ret
