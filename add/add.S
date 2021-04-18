@@ -2,6 +2,9 @@ section .text
 global _add
 
 _add:
-    mov eax, edi
-    add eax, esi
+    push ebp
+    mov ebp, esp
+    mov eax, [ebp+8]
+    add eax, [ebp+12]
+    pop ebp
     ret
