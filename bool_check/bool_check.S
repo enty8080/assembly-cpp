@@ -2,7 +2,11 @@ section .text
 global bool_check
 
 bool_check:
-    cmp edi, 1
+    push ebp
+    mov ebp, esp
+    mov ecx, [ebp+8]
+    pop ebp
+    cmp ecx, 1
     je one
     mov eax, 0
     ret
