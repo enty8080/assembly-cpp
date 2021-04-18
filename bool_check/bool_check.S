@@ -1,16 +1,12 @@
 section .text
-global _bool_check
+global bool_check
 
-_bool_check:
-    cmd edi, 1
+bool_check:
+    cmp edi, 1
     je one
-    jne two
+    mov eax, 0
     ret
     
 one:
     mov eax, 1
-    ret
-    
-two:
-    mov eax, 0
     ret
