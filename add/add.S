@@ -1,7 +1,7 @@
 section .text
-global _add
+global add
 
-_add:
+add:
     mov rax, rdi
     add rax, rsi
     ret
